@@ -55,8 +55,6 @@ public class GameManager : MonoBehaviour
                 pointText.text = "3";
             else if (timer > 10 && player.coin >= 2)
                 pointText.text = "2";
-            else if (timer > 0 || player.coin >= 2)
-                pointText.text = "2";
             else
                 pointText.text = "1";
             isOver = true;

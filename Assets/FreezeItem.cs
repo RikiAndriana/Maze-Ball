@@ -5,14 +5,14 @@ using UnityEngine;
 public class FreezeItem : MonoBehaviour
 {
     public bool IsFreeze = false;
-    [SerializeField] AudioSource coinSFX;
+    [SerializeField] AudioSource SFX;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             IsFreeze = true;
-            coinSFX.Play();
+            SFX.Play();
             Destroy(gameObject);
         }
     }
